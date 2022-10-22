@@ -1,0 +1,118 @@
+#component {
+    background-color: hsl(213, 19%, 18%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: hsl(217, 12%, 63%);
+    width: 320px;
+    border-radius: 15px;
+    padding: 1.2em;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+#starDiv {
+    border-radius: 30px;
+    background-color: hsl(212, 11%, 30%);
+    width: 20px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#star {
+    background-color: hsl(212, 11%, 30%);
+}
+
+#submit {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    padding: 1em 9em 1em 9em;
+    border: 0;
+    border-radius: 30px;
+    width: 100%;
+}
+
+#submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    background-color: hsl(212, 11%, 30%);
+    color: hsl(217, 12%, 63%);
+    border: 0;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.value:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+#valueDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#component2 {
+    display: none;
+    background-color: hsl(213, 19%, 18%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: hsl(217, 12%, 63%);
+    width: 320px;
+    border-radius: 15px;
+    padding: 1.2em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#scoreText {
+    border-radius: 20px;
+    background-color: hsl(212, 11%, 30%);
+    color: hsl(25, 97%, 53%);
+    width: 55%;
+    text-align: center;
+    margin-left: 5em;
+}   
+
+
+@media(min-width:1440px){
+    #component, #component2 {
+        width: 450px;
+        font-size: 20px;
+    }
+
+    #scoreText {
+        margin-left: 6em;
+    }
+
+    .value {
+        width: 50px;
+        height: 50px;
+    }
+}
